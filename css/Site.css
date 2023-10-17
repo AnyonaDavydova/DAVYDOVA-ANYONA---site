@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #ffffff;
+	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+
+body {
+	background-color: #000;
+	font-family: Arial;
+}
+
+.Top {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.TopDesign {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	will-change: transform;
+	z-index: 2;
+	transition: var(--transition);
+}
+.BACKGROUND {
+
+	z-index: 0;
+}
+.DECORATION {
+	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+
+
+.Top_Text {
+	z-index: 1;
+	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	transition: var(--transition);
+	will-change: transform;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: var(--text);
+	text-shadow: 0 0 15px #fff;
+}
+.TextS {
+	font-size: calc(var(--index) * 2.65);
+	letter-spacing: calc(var(--index) / 2.25);
+}
+
+
+
