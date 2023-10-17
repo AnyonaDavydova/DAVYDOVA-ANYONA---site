@@ -38,8 +38,6 @@ body {
 .DECORATION {
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
 }
-
-
 .Top_Text {
 	z-index: 1;
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
@@ -55,17 +53,18 @@ body {
 	letter-spacing: calc(var(--index) / 2.25);
 }
 .Bottom {
-	height: 100vh;
 	width: 100%;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
 	overflow: hidden;
 	position: relative;
 	background-repeat: inherit;
-	}
-.Bottom a{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.Bottom a {
 width: 10%;
 }
 
