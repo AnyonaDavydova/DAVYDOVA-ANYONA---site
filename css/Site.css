@@ -22,51 +22,59 @@ body {
 	overflow: hidden;
 	position: relative;
 }
+
 .TopDesign {
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	background-size: cover;
 	background-position: center;
-	will-change: transform;
-	z-index: 2;
 	transition: var(--transition);
 }
-.BACKGROUND {
-	z-index: 0;
-}
-.DECORATION {
+
+.Decoration {
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
 }
+
 .Top_Text {
 	z-index: 1;
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: var(--transition);
-	will-change: transform;
 	text-transform: uppercase;
 	font-weight: 800;
 	color: var(--text);
 	text-shadow: 0 0 15px #fff;
 }
-.TextS {
+
+.TextMain {
 	font-size: calc(var(--index) * 2.65);
 	letter-spacing: calc(var(--index) / 2.25);
 }
+
+
 .Bottom {
-	width: 100%;
+	height: 100vh;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
 	background-repeat: inherit;
-    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
+
 }
-.Bottom a {
-width: 10%;
+.links {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+	padding-left: 0;
+    display: flex;
+    margin-top: 2px;
 }
 
-
-
+li {
+    list-style-type: none;
+    margin: auto;
+  
+}
